@@ -30,10 +30,10 @@ devtools::install_github("coolbutuseless/minicss")
 devtools::install_github("coolbutuseless/miniverse")
 ```
 
-|                                                                                                                                                                                                                         |                                                                                                                                                                                                               |                                                                                                                                                                                                                              |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="man/figures/logopdf.png"> <br/>Create PDF documents<br/><a href="http://github.com/coolbutuseless/minipdf">Github</a><br/> <a href="http://coolbutuseless.github.io/package/minipdf">Online documentation</a> | <img src="man/figures/logocss.png"><br/> Create CSS<br/><a href="http://github.com/coolbutuseless/minicss">Github</a><br/> <a href="http://coolbutuseless.github.io/package/minicss">Online documentation</a> | <img src="man/figures/logohtml.png"> <br/> Create HTML documents<br/><a href="http://github.com/coolbutuseless/minihtml">Github</a><br/> <a href="http://coolbutuseless.github.io/package/minihtml">Online documentation</a> |
-| <img src="man/figures/logoxml.png"> <br/>Create XML documents<br/><a href="http://github.com/coolbutuseless/minixml">Github</a><br/> <a href="http://coolbutuseless.github.io/package/minixml">Online documentation</a> |                                                                                                                                                                                                               |                                                                                                                                                                                                                              |
+|                                                                                                                                                                                                                         |                                                                                                                                                                                                                         |                                                                                                                                                                                                                              |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="man/figures/logopdf.png"> <br/>Create PDF documents<br/><a href="http://github.com/coolbutuseless/minipdf">Github</a><br/> <a href="http://coolbutuseless.github.io/package/minipdf">Online documentation</a> | <img src="man/figures/logocss.png"><br/> Create CSS<br/><a href="http://github.com/coolbutuseless/minicss">Github</a><br/> <a href="http://coolbutuseless.github.io/package/minicss">Online documentation</a>           | <img src="man/figures/logohtml.png"> <br/> Create HTML documents<br/><a href="http://github.com/coolbutuseless/minihtml">Github</a><br/> <a href="http://coolbutuseless.github.io/package/minihtml">Online documentation</a> |
+| <img src="man/figures/logoxml.png"> <br/>Create XML documents<br/><a href="http://github.com/coolbutuseless/minixml">Github</a><br/> <a href="http://coolbutuseless.github.io/package/minixml">Online documentation</a> | <img src="man/figures/logosvg.png"> <br/>Create SVG documents<br/><a href="http://github.com/coolbutuseless/minisvg">Github</a><br/> <a href="http://coolbutuseless.github.io/package/minisvg">Online documentation</a> |                                                                                                                                                                                                                              |
 
 # High level document description
 
@@ -59,6 +59,7 @@ New documents can usually be initialised in 2 ways:
 | minicss  | `StyleSheet$new()`         | `css_stylesheet()`     |
 | minihtml | `HTMLDocument$new()`       | `html_doc()`           |
 | minixml  | `XMLDocument$new()`        | `xml_doc()`            |
+| minisvg  | `SVGDocument$new()`        | `svg_doc()`            |
 
 # Initialising a bare element
 
@@ -77,6 +78,7 @@ element.
 | minicss  | `Style$new()`                           | `css_style()`          |                                     |
 | minihtml | `HTMLElement$new()`                     | `html_elem()`          | `htag$title()`, `htag$div()`, etc   |
 | minixml  | `XMLElement$new()`                      | `xml_elem()`           |                                     |
+| minisvg  | `SVGElement$new()`                      | `svg_elem()`           | `stag$circle()`, `stag$rect()`, etc |
 
 # Appending an element to an existing element or document
 
@@ -89,6 +91,7 @@ was being appended to.
 | minicss  | `Style$append()`                              |
 | minihtml | `HTMLElement$append()`                        |
 | minixml  | `XMLElement$append()`                         |
+| minisvg  | `SVGElement$append()`                         |
 
 # Creating an element directly within an existing element or document
 
@@ -102,6 +105,7 @@ returned.
 | minicss  |                                                   | `StyleSheet$add()`                               |
 | minihtml | `HTMLElement$div()`, `HTMLDocument$title()`, etc  | `HTMLElement$add()`, `HTMLDocument$add()`, etc   |
 | minixml  |                                                   | `XMLElement$add()`, `XMLDocument$add()`, etc     |
+| minisvg  | `SVGElement$circle()`, `SVGDocument$rect()`       | `SVGElement$add()`, `SVGDocument$add()`, etc     |
 
 # Update attributes and Add Child Elements
 
@@ -116,6 +120,7 @@ In general when calling `$update()` on a document or element:
 | minicss  | `Style$update()`                                |
 | minihtml | `HTMLElement$update()`, `HTMLDocument$update()` |
 | minixml  | `XMLElement$update()`, `XMLDocument$update()`   |
+| minisvg  | `SVGElement$update()`, `SVGDocument$update()`   |
 
 # Logo
 
