@@ -28,6 +28,7 @@ devtools::install_github("coolbutuseless/miniverse")
 devtools::install_github("coolbutuseless/minipdf")
 devtools::install_github("coolbutuseless/minihtml")
 devtools::install_github("coolbutuseless/minicss")
+devtools::install_github("coolbutuseless/minixml")
 devtools::install_github("coolbutuseless/minisvg")
 
 # Pattern libraries for `minisvg`
